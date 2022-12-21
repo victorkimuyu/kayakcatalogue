@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'fonts/inter.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        table thead th:first-child {
+            position: sticky;
+            left: 0;
+            z-index: 2;
+        }
+
+        table tbody th {
+            position: sticky;
+            left: 0;
+            background: white;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="text-xs leading-[20px]  w-[90%] m-auto antialiased">
+<div class="flex justify-between">
+    {% block header %}
+        <img class="mt-2" src="{% static 'images/kd-Logo.png' %}" alt="">
+        {% block actions %}
+        {% endblock %}
+    {% endblock %}
+</div>
+<div class="mt-2">
+    {% block content %}
+
+    {% endblock %}
+</div>
+</body>
+</html>
