@@ -1,0 +1,24 @@
+{
+  "name": "catalogue",
+  "version": "1.0.0",
+  "description": "[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/GB6Eki?referralCode=U5zXSw)",
+  "main": "index.js",
+  "scripts": {
+    "buildit": "tailwind -i src/tailwind/input.css  -o static/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorkimuyu/kayakcatalogue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorkimuyu/kayakcatalogue/issues"
+  },
+  "homepage": "https://github.com/victorkimuyu/kayakcatalogue#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "tailwindcss": "^3.2.4"
+  }
+}
